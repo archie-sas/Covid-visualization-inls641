@@ -1,0 +1,23 @@
+
+#usmap {
+    position: relative;
+    width: 100%;
+    height: auto;
+    }
+
+#usmap svg {
+    position: absolute;
+
+}
+
+.state-boundary {
+  fill: #80d1da;
+  stroke: #fff;
+  stroke-width: 0.5px;
+}
+
+.county {
+  fill: #aca;
+  stroke: #fff;
+  stroke-width: 0.2px;
+}
