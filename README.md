@@ -23,12 +23,12 @@ There is a bunch of files in the repo. Some are task-related files, the others a
 
 These are regular web page files.
 
-### ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - `us_county_5m_topojson.json`
 - `stateFIPS.json` 
 
 These are files recording map information.
-### ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+### ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 - `bundle.js`
 
 This file is a js file bundling up main js file as well as required node modules.(In this case, that is map projection function) That's why in the html file `bundle.js` is inserted rather than `main.js`.
@@ -38,11 +38,11 @@ This file is a js file bundling up main js file as well as required node modules
 Every time you should start with `npx gulp browser-sync`.
 The `browser-sync` will automatically watch the file change and synchonically display the change on the page.
 
-When you want to change `main.js` file, open a new terminal window and run
+When you want to edit `main.js` file, **open a new terminal window** and run
 ```
 npx browserify main.js -o bundle.js
 ```
 Remember we insert `bundle.js`, so changes in the `main.js` should be interpreted in `bundle.js` as well to see the changes. Do not directly edit `bundle.js`.
 
-**To close the local server**, in your browser-sync terminal window and run `ctrl+c` or `cmd+c`.
+**To close the local server**, in your browser-sync terminal window and press `ctrl+c`.
 
