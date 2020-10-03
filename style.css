@@ -7,17 +7,21 @@
 
 #usmap svg {
     position: absolute;
+    background-color: #00436f;
 
 }
 
-.state-boundary {
-  fill: #80d1da;
+.state {
+  
   stroke: #fff;
   stroke-width: 0.5px;
 }
 
-.county {
-  fill: #aca;
-  stroke: #fff;
-  stroke-width: 0.2px;
+
+.tooltip {
+  background-color:lightskyblue;
+  border: 2px,solid,black;
+  border-radius:5px;
+  padding:5px;
+  position: absolute;
 }
