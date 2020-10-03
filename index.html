@@ -9,10 +9,28 @@
   <script src="https://unpkg.com/topojson@3"></script>
   <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
+<<<<<<< HEAD
   <h1>Map</h1>
+=======
+  <h1>Covid Cases by race in the United States</h1>
+  <div id = "RaceButtonContainer"> 
+    <button class = "btn active"
+  onclick = "filterSelection('all')">All Races</button>
+    <button class = 'btn'
+  onclick = "filterSelection('Caucasian')">Caucasian</button>
+    <button class = 'btn'
+  onclick = "filterSelection('Black')">African American</button>
+    <button class = 'btn'
+  onclick = "filterSelection('Asian')">Asian</button>
+    <button class = 'btn'
+  onclick = "filterSelection('Other')">Other</button>
+  </div> 
+  
+>>>>>>> 40a9f623be1340d82393f394eb5beafd34173af7
   <div id='usmap'></div>
   <script src="bundle.js"></script>
 </body>
