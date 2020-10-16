@@ -1,3 +1,7 @@
+//variables will handle our inputs and help us with the slider values.
+var inputValue = null;
+var month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
 /** get the map projection function from node module. */
 let proj = require('geo-albers-usa-territories')
 
@@ -66,7 +70,40 @@ d3.json('us_county_5m_topojson.json').then(function (us) {
     .attr("name", d => d.properties.NAME)
     .on('mousedown', (d) => { console.log(d.properties.NAME) })
 
+  // when the input range changes update the value 
+d3.select("#timeslide").on("input", function() {
+  update(+this.value);
+});
 
+// update the fill of each SVG of class "incident" with value
+function update(value) {
+  document.getElementById("range").innerHTML=month[value];
+  inputValue = month[value];
+  d3.selectAll(".incident")
+      .attr("fill", dateMatch);
+}
+
+function dateMatch(data, value) {
+  var d = new Date(data.properties.OPEN_DT);
+  var m = month[d.getMonth()];
+  if (inputValue == m) {
+      this.parentElement.appendChild(this);
+      return "red";
+  } else {
+      return "#999";
+  };
+}
+
+function initialDate(d,i){
+  var d = new Date(d.properties.OPEN_DT);
+  var m = month[d.getMonth()];
+  if (m == "January") {
+      this.parentElement.appendChild(this);
+      return "red";
+  } else {
+      return "#999";
+  };
+}
 
 
   /**

@@ -28,6 +28,18 @@ h1{
   text-align: center;
 }
 
+h2{
+  top: 30px;
+  font-size: 1em;
+}
+
+/* style slider */
+#sliderContainer {
+  text-align: center;
+  position: relative;
+  top: 600px;
+}
+
 .filterDiv {
   float: left;
   background-color: #2196F3;
