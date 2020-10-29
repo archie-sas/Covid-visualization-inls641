@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+  <meta name="viewport" content="width = device-width, initial-scale=1.0" />
   <title>Document</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/topojson@3"></script>
@@ -14,18 +14,21 @@
 
 <body>
   <h1>Covid Cases by race in the United States</h1>
+  <div>
+    <button class="btn active-type" id="cases">Cases</button>
+    <button class="btn" id="deaths">Deaths</button>
+  </div>
   <div id="RaceButtonContainer">
     <button class="btn active" id="all">All Races</button>
-    <button class='btn' id="white">Caucasian</button>
-    <button class='btn' id="black">African American</button>
-    <button class='btn' id="asian">Asian</button>
-    <button class='btn'>Other</button>
+    <button class="btn" id="white">Caucasian</button>
+    <button class="btn" id="black">African American</button>
+    <button class="btn" id="asian">Asian</button>
   </div>
 
-  <div id='usmap'></div>
+  <div id="usmap"></div>
   <div id="sliderContainer">
-    <input id="timeslide" type="range" min="0" max="11" value="0" step="1" /><br>
-    <span id="range">January</span>
+    <input id="timeslide" type="range" min="0" />
+    <span id="date"></span>
   </div>
   <script src="main.js"></script>
 </body>
