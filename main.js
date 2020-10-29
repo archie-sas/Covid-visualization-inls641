@@ -182,6 +182,7 @@ function updateView(dates, data) {
 
 function getColorScale(filteredData, type) {
 
+
   const max = Math.max(...filteredData)
   return d3.scaleSequential()
     .domain([0, max])
