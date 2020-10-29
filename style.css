@@ -45,8 +45,7 @@ h2{
 /* style slider */
 #sliderContainer {
   text-align: center;
-  position: relative;
-  top: 600px;
+  position: static;
 }
 
 .filterDiv {
