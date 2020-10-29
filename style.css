@@ -99,3 +99,9 @@ h2{
   color: white;
   width: 10%;
 }
+.btn.active-type {
+  display: table;
+  background-color: #666;
+  color: white;
+  width: 10%;
+}

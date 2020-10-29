@@ -39,19 +39,22 @@ d3.json('cb_2019_us_state_20m.json').then(function (us) {
     .attr("d", path)
     .attr("abbr", d => d.properties.STUSPS)
     .attr('name', d => d.properties.NAME)
+    .style('opacity', 0)
     .on('mouseenter', mouseEnter)
     .on('mouseleave', mouseLeave)
     .on('mousemove', mouseMove)
+
 }).then(() => {
 
-  d3.csv('2DaysEditNormalized2.csv').then(function (data) {
+  d3.csv('2DaysEditNormalized3.csv').then(function (data) {
     // set up slider's default status
     const dates = setupSlider(data)
 
     // draw the default map
-    const activeRace = document.querySelector('.active').getAttribute('id')
+    updateMap(data, dates)
 
-    updateMap(activeRace, data, dates)
+    // display the map
+    d3.selectAll('path').style('opacity', 1)
 
     // handle buttons click
     d3.select('#all').on('click', e => handleRaceClick('all', data, dates))
@@ -59,7 +62,8 @@ d3.json('cb_2019_us_state_20m.json').then(function (us) {
     d3.select('#black').on('click', e => handleRaceClick('black', data, dates))
     d3.select('#asian').on('click', e => handleRaceClick('asian', data, dates))
 
-    d3.select('cases')
+    d3.select('#cases').on('click', e => handleTypeClick('cases', data, dates))
+    d3.select('#deaths').on('click', e => handleTypeClick('deaths', data, dates))
   })
 })
 
@@ -91,8 +95,9 @@ function mouseMove(d) {
     .style("top", (d3.mouse(this)[1]) + "px")
 }
 
-function updateMap(race, data, dates) {
+function updateMap(data, dates) {
   const type = getMapType()
+  const race = getRaceType()
   const oneDay = getSelectedDay(dates)
   const rows = data.filter(row => row.Date == oneDay)
   const filteredData = filterRows(type, race, rows)
@@ -143,9 +148,7 @@ function updateView(dates, data) {
   d3.select('#date').text(dayString)
 
   // update map
-
-  const activeRace = document.querySelector('.active').getAttribute('id')
-  updateMap(activeRace, data, dates)
+  updateMap(data, dates)
 
 }
 
@@ -161,26 +164,28 @@ function getColorScale(filteredData, type) {
 }
 
 function handleRaceClick(race, data, dates) {
-  // const type = getMapType()
-  // const oneDay = getSelectedDay(dates)
-  // const rows = data.filter(row => row.Date == oneDay)
-  // const filteredData = filterRows(type, race, rows)
-  // const NormalizedArray = filteredData.map(o => o.digit)
-  // const colorScale = getColorScale(NormalizedArray, type)
 
-
-  updateMap(race, data, dates)
-
-  // toggle the button style
-  d3.selectAll('.btn').classed('active', false)
+  d3.selectAll('#RaceButtonContainer .btn').classed('active', false)
   d3.select(`#${race}`).classed("active", true)
+  updateMap(data, dates)
+
+  // toggle the button status
+
 
 }
+function handleTypeClick(type, data, dates) {
+  // toggle the button status
+  d3.selectAll('#CaseButtonContainer .btn').classed('active-type', false)
+  d3.select(`#${type}`).classed("active-type", true)
 
+  updateMap(data, dates)
+}
 function getMapType() {
   return document.querySelector('.active-type').getAttribute('id')
 }
-
+function getRaceType() {
+  return document.querySelector('.active').getAttribute('id')
+}
 function getSelectedDay(dates) {
   const sliderVal = document.querySelector('#timeslide').value
   return dates[sliderVal]
