@@ -180,19 +180,8 @@ function updateView(dates, data) {
   updateMap(activeRace, data, dates)
 }
 
-<<<<<<< HEAD
-// creating heat map legend
-
-var heatLegend = chart.createChild(am4charts.HeatLegend);
-heatLegend.minColor = am4core.color("#F5DBCB");
-heatLegend.maxColor = am4core.color("#ED7B84");
-heatLegend.minValue = 0;
-heatLegend.maxValue = 2000;
-
-
-=======
 function getColorScale(filteredData, type) {
->>>>>>> bd8b6d4405845feddffcdcf1fd2719bc3d2582a4
+
 
   const max = Math.max(...filteredData)
   return d3.scaleSequential()
