@@ -9,7 +9,7 @@
 
 #usmap svg {
     display: flex;
-    justify-content: center
+    justify-content: center;
     position: absolute;
     background-color: #00436f;
 
