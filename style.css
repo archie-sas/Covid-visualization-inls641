@@ -4,13 +4,13 @@
     width: 100%;
     height: auto;
     display: flex;
-    justify-content: center
+    justify-content: center;
     }
 
 #usmap svg {
     display: flex;
     justify-content: center;
-    position: absolute;
+    position: relative;
     background-color: #00436f;
 
 }
