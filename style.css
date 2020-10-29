@@ -71,10 +71,16 @@ h2{
 
 /* Style the buttons */
 
+#CaseButtonContainer {
+  display: flex; 
+  justify-content: center;
+}
+
 #RaceButtonContainer {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
+
 
 .btn {
   border: none;
