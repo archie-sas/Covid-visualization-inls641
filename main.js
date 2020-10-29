@@ -1,6 +1,3 @@
-// variables will handle our inputs and help us with the slider values.
-var inputValue = null;
-var month = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
 /** set up map scale.*/
 // let devicePixelRatio = window.devicePixelRatio || 1;
@@ -15,8 +12,8 @@ let svg = d3
   .attr('width', width)
   .attr('height', height)
   .attr('transform', `scale(${devicePixelRatio})`)
-  .style('left', '0px')
-  .style('top', '0px')
+// .style('left', '0px')
+// .style('top', '0px')
 
 
 /** set up map projection.*/
@@ -47,7 +44,7 @@ d3.json('cb_2019_us_state_20m.json').then(function (us) {
     .on('mousemove', mouseMove)
 }).then(() => {
 
-  d3.csv('2DaysEditNormalized.csv').then(function (data) {
+  d3.csv('2DaysEditNormalized2.csv').then(function (data) {
     // set up slider's default status
     const dates = setupSlider(data)
 
@@ -61,43 +58,11 @@ d3.json('cb_2019_us_state_20m.json').then(function (us) {
     d3.select('#white').on('click', e => handleRaceClick('white', data, dates))
     d3.select('#black').on('click', e => handleRaceClick('black', data, dates))
     d3.select('#asian').on('click', e => handleRaceClick('asian', data, dates))
+
+    d3.select('cases')
   })
 })
 
-// when the input range changes update the value 
-// d3.select("#timeslide").on("input", function () {
-//   update(+this.value);
-// });
-
-// update the fill of each SVG of class "incident" with value
-// function update(value) {
-//   document.getElementById("range").innerHTML = month[value];
-//   inputValue = month[value];
-//   d3.selectAll(".incident")
-//     .attr("fill", dateMatch);
-// }
-
-// function dateMatch(data, value) {
-//   var d = new Date(data.properties.OPEN_DT);
-//   var m = month[d.getMonth()];
-//   if (inputValue == m) {
-//     this.parentElement.appendChild(this);
-//     return "red";
-//   } else {
-//     return "#999";
-//   };
-// }
-
-// function initialDate(d, i) {
-//   var d = new Date(d.properties.OPEN_DT);
-//   var m = month[d.getMonth()];
-//   if (m == "January") {
-//     this.parentElement.appendChild(this);
-//     return "red";
-//   } else {
-//     return "#999";
-//   };
-// }
 
 function mouseEnter(d) {
   d3.selectAll(".state")
@@ -119,6 +84,7 @@ function mouseLeave(d) {
 }
 
 function mouseMove(d) {
+
   d3.select('.tooltip')
     .html(d3.select(this).attr('name') + `  ${d3.select(this).attr('casesP')}`)
     .style("left", (d3.mouse(this)[0] + 30) + "px")
@@ -144,7 +110,9 @@ function updateMap(race, data, dates) {
     }
   })
 
+  // update legend
 
+  updateLegend(colorScale, NormalizedArray)
 
 }
 
@@ -178,6 +146,7 @@ function updateView(dates, data) {
 
   const activeRace = document.querySelector('.active').getAttribute('id')
   updateMap(activeRace, data, dates)
+
 }
 
 function getColorScale(filteredData, type) {
@@ -292,3 +261,8 @@ function filterRows(type, race, oneDay) {
   return filteredData
 }
 
+function updateLegend(colors, array) {
+  const max = Math.max(...array)
+  const min = 0
+  return 0;
+}

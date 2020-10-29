@@ -1,16 +1,14 @@
 
 #usmap {
     position: relative;
-    width: 100%;
+    width: 950px;
     height: auto;
-    display: flex;
-    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
     }
 
 #usmap svg {
-    display: flex;
-    justify-content: center;
-    position: relative;
+    
     background-color: #00436f;
 
 }
