@@ -172,6 +172,15 @@ function initialDate(d, i) {
   };
 }
 
+// creating heat map legend
+
+var heatLegend = chart.createChild(am4charts.HeatLegend);
+heatLegend.minColor = am4core.color("#F5DBCB");
+heatLegend.maxColor = am4core.color("#ED7B84");
+heatLegend.minValue = 0;
+heatLegend.maxValue = 2000;
+
+
 
 
 
