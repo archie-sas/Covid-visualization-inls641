@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/topojson@3"></script>
@@ -30,7 +30,37 @@
   </div>
   <br>
 
-  <div id="usmap"></div>
+  <div id="usmap">
+    <div class="tooltip">
+      <div class="title">
+        <div class="name"></div>
+        <div class="date"></div>
+      </div>
+      <div class="stats">
+        <div class="metric">
+          <div>Metric</div>
+          <div class="cases">Cases</div>
+          <div class="deaths">Deaths</div>
+        </div>
+        <div class="total">
+          <div>Total</div>
+          <div class="cases"></div>
+          <div class="deaths"></div>
+        </div>
+        <div class="percentage">
+          <div>Percentage*</div>
+          <div class="cases"></div>
+          <div class="deaths"></div>
+        </div>
+      </div>
+    </div>
+    <div class="caption">
+      *Percentage: This is calculated from the absolute number divided by the population of the correspoding race in
+      each
+      state.<br>Not all cases or deaths were reported with race data.
+    </div>
+  </div>
+
   <div id="sliderContainer">
     <input id="timeslide" type="range" min="0" max="11" value="0" step="1" /><br>
     <span id="date"></span>
