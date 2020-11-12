@@ -4,11 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
+  <title>COVID-19 US map</title>
   <script src="https://d3js.org/d3.v5.min.js"></script>
   <script src="https://unpkg.com/topojson@3"></script>
-  <script src="https://www.amcharts.com/lib/4/core.js"></script>
-  <script src="https://www.amcharts.com/lib/4/charts.js"></script>
   <link rel="stylesheet" href="style.css">
 
 
@@ -57,13 +55,51 @@
     <div class="caption">
       *Percentage: This is calculated from the absolute number divided by the population of the correspoding race in
       each
-      state.<br>Not all cases or deaths were reported with race data.
+      state.<br>Not all cases or deaths were reported with race data. Click the state and see racial report rate of
+      both cases and deaths.
     </div>
   </div>
 
   <div id="sliderContainer">
     <input id="timeslide" type="range" min="0" max="11" value="0" step="1" /><br>
     <span id="date"></span>
+  </div>
+
+  <div id="chart">
+    <div class="tooltip">
+      <div class="title">
+        <div class="name"></div>
+      </div>
+      <div class="stats">
+        <div class="metric">
+          <div>Race</div>
+          <div>All</div>
+          <div>White</div>
+          <div>Black</div>
+          <div>Asian</div>
+          <div>AIAN</div>
+          <div>NHPI</div>
+        </div>
+        <div class="total">
+          <div>Total</div>
+          <div class="all"></div>
+          <div class="White"></div>
+          <div class="Black"></div>
+          <div class="Asian"></div>
+          <div class="AIAN"></div>
+          <div class="NHPI"></div>
+        </div>
+        <div class="percentage">
+          <div>Percentage*</div>
+          <div class="all"></div>
+          <div class="White"></div>
+          <div class="Black"></div>
+          <div class="Asian"></div>
+          <div class="AIAN"></div>
+          <div class="NHPI"></div>
+        </div>
+      </div>
+    </div>
   </div>
   <script src="main.js"></script>
 </body>
