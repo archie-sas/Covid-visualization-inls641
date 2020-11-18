@@ -1,37 +1,29 @@
-## Welcome to GitHub Pages
+## Covid 19 in the USA Final Report
 
-You can use the [editor on GitHub](https://github.com/archie-sas/Covid-visualization-inls641/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+This page is meant to serve as the final report of our team's Covid Visualization project for INLS 641. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Team Goals
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Our team originally wanted to see how the United States had been affected by the COVID-19 throughout the time since the pandemic began. However, soon after the initial proposal, we wanted to expand this visualization into highlighting racial disparities that were occuring in the healthcare system, which in turn point to a larger problem of racial disparity across the United States. 
 
-```markdown
-Syntax highlighted code block
+Our project was intended to be for several audiences. The first being for general public information. We wanted to allow for people to track how covid was affecting each of their states, but also wanted there to be information for each demographic in their state as well. The other audience we wanted to reach is public health officials. A visualization that highlights where racial disparities are most severe will help these officials identify where there is a higher need for nurses and doctors to focus their time and energy on. 
 
-# Header 1
-## Header 2
-### Header 3
+### Intended Visualization design
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+### The process of the project 
 
-**Bold** and _Italic_ and `Code` text
+- did we stick to initial plans
+- were some parts harder/easier/more time consuming than expected
 
-[Link](url) and ![Image](src)
-```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+### End result (the prototype)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/archie-sas/Covid-visualization-inls641/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+### Ethical and Societal concerns
 
-### Support or Contact
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Reflection
+
+- how did the team project progress now that we have reached the end of the semester
