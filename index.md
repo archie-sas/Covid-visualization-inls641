@@ -16,18 +16,19 @@ Ultimately for both of these groups, we wanted the visualization to get people t
 
 
 
-### The process of the project 
+### The process of the project (ziyang, Will)
 
+- data portion
 - did we stick to initial plans
 - were some parts harder/easier/more time consuming than expected
 
 
-### End result (the prototype)
+### End result (the prototype) - (Alec)
 
 
-### Ethical and Societal concerns
+### Ethical and Societal concerns - (Will)
 
 
-### Reflection
+### Reflection (Ariel)
 
 - how did the team project progress now that we have reached the end of the semester
