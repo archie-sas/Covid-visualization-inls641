@@ -20,16 +20,16 @@ Fig 1. Very first Whiteboarding session showing the original framework for websi
 
 The actual design that we ended up with was similar but had some differences from the original whiteboard session, including removing and adding some features. Features that we removed from our original design included the animation portion of the heatmap. Instead we opted to have just the slider show how the map was changing since our range of dates wasn’t very long and the coloration of the map was not as extreme as we thought. In lieu of an animation, we opted to add in a line chart component which would appear when the user clicked on a state. We chose to use this instead because it made comparing the percentage of cases and deaths per state a lot clearer. In fact, even more clear then the original heat map, since we could see multiple races at a time. We were also able to add other races that were being tracked in the line chart, but unable to track in the heat map due to the lack of comprehensive data in some states. 
 
-![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/line_chart.png)
+![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/line_chart.png?raw=true)
 Fig 2. Line chart showing the percentage of cases in each Race in Pennsylvania
 
 In addition to the line map, we wanted to add another tool tip on the line map that would appear when you hovered over the pink line, which would give the user a detailed percentage of each state and the percentage of cases. The percentage was calculated by taking the total number of cases or deaths and dividing it by census data in order to get the data normalized. 
-![](https://github.com/archie-sas/Covid-visualization inls641/blob/master/pictures/percentage_info.png)
+![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/percentage_info.png?raw=true)
 Fig 3. Actual percentage chart
 
 Lastly, we changed the information bar to the right to become a tooltip that would appear with statistics when you hovered over the state. This way, the user would not have to look over to a separate bar on the right, the information would be right in front of them and the state would be highlighted in order to reinforce which state they were looking at. 
 
-![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/map_info.png)
+![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/map_info.png?raw=true)
 Fig 4. Tooltip that shows state statistics when hovered over
 
 Overall, the final product varied pretty differently from our original proposal although the base project was similar. The changes made were ultimately all in order to provide more information to the user then just the heatmap, which we found was not sufficient enough for proper analysis of the data. 
