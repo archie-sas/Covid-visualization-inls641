@@ -2,8 +2,17 @@
 
 This page is meant to serve as the final report of our team's Covid Visualization project for INLS 641. 
 
+# Table of Contents 
 
-### Team Goals
+1. [Team Goals](#team-goals)
+2. [Intendeded Visualization Design](#intended-visualization-design)
+3. [The Process](#the-process-of-the-project)
+4. [The Final Product](#end-result)
+5. [Ethical and Societal Concerns](#ethical-and-societal-concerns)
+6. [Reflection](#reflection) 
+
+
+## Team Goals
 
 Our team originally wanted to just visualize how the United States had been affected by the COVID-19 throughout the time since the pandemic began. However, soon after the initial proposal, we wanted to expand this visualization into highlighting racial disparities that were occuring in the healthcare system, which in turn point to a larger problem of racial disparity across the United States. 
 
@@ -11,7 +20,7 @@ Our project was intended to be for several audiences. The first being for genera
 
 Ultimately for both of these groups, we wanted the visualization to get people to start thinking about this question: **Which  races are more heavily affected by Covid-19 then others and why?**
 
-### Intended Visualization design
+## Intended Visualization design
 
 Our initial visualization design focused on a heat map of cases throughout time. This heat map would have an overarching count of the number of cases and deaths across different states. Then we would add in buttons which would change the heat map to display cases/deaths per race over time. We initially also wanted to include a sidebar to display more detailed information when the user hovered over each state. This way, they could see the exact numbers and information. We also considered adding a play button which would cause the map to automatically cycle through the dates and increment the heat map. An initial draft of our whiteboarding session is seen below. Ultimately, our group's original focus was purely on the change in cases/deaths over time per race. 
 
@@ -25,7 +34,7 @@ Additionally, very soon into our initial whiteboarding session, we thought that 
 
 Overall, the final product varied pretty differently from our original proposal although the base project was similar. The changes made were ultimately all in order to provide more information to the user then just the heatmap, which we found was not sufficient enough for proper analysis of the data. 
 
-### The process of the project
+## The process of the project
 
 This project used data from The COVID Tracking Project, a volunteer organization launched from The Atlantic. The data starts on 4/12/2020 and is updated roughly every 3 days. It includes data on the 50 states as well as 6 US-affiliated territories. It is stored as an excel file, with the rows being the states on various days and the columns being the various racial breakdown data.
 
@@ -51,7 +60,7 @@ In addition, there is a mouse hovering event that controls the display/hide the 
 
 
 
-### End result 
+## End result 
 
 The visualization that we decided on going with in the end focused on showing covid cases and deaths with a focus on how the virus has affected different races by state over time. When loaded, our final prototype includes a heatmap with buttons that filter by race. There is a slider at the bottom of the map where the user can indicate a certain point in time or slide through to see the progression of how the virus has affected the United States as a whole or a certain state. Under the map and slider, we included a line chart in order to give the user a better understanding of the percentages instead of just the heatmap visual. Within the line chart, there is a vertical pink bar that indicates the point in time corresponding to the position of the slider. 
 
@@ -73,7 +82,7 @@ Lastly, we changed the information bar to the right to become a tooltip that wou
 ![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/map_info.png?raw=true)
 *Fig 6. Tooltip that shows state statistics when hovered over*
 
-### Ethical and Societal concerns
+## Ethical and Societal concerns
 
 One of the biggest societal concerns is how the Covid-19 virus has disproportionately affected different races and different states. The states with the highest percentages of cases are concentrated in the southern region of the USA. These state’s refusal to close down, mandate mask use and a variety of other factors seems to contribute to their high rate of cases. The states with the highest percentages of deaths are concentrated in the Tristate area. This is likely due to their status as an international hub, high population density and being among the first areas to deal with the virus. In regards to race, African Americans consistently have the highest rate of cases and deaths while Caucasian have the lowest. Asian, AIAN and NHPI usually fall between the two. This raises the concern of why Covid-19 is having a disproportionately large impact on minority races. 
 
@@ -81,7 +90,7 @@ One of the biggest societal concerns is how the Covid-19 virus has disproportion
 From an ethical standpoint, a big concern is the data quality. The dataset starts in mid-April, when reports of underreporting Covid-19 statistics were rampant. Covid-19 related deaths are not directly classified as Covid-19 deaths and diseases such as pneumonia and influenza have very similar symptoms to Covid-19. In addition, deaths not directly caused by Covid-19 but are nonetheless related to the pandemic, are not recorded. These deaths include scenarios such as not receiving emergency care due to overcrowded hospitals, suicide from depression caused by the lock etc. Should these cases be included when studying the deaths caused by Covid-19? 
 
 
-### Reflection 
+## Reflection 
 
 The team project went through a lot of changes throughout the semester in order to get a clearer picture of the data. Throughout the process, we had to change many things about our project in order for our users to be able to answer our big question: Which races are more heavily affected by Covid-19 and why?
 
