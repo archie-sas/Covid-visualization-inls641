@@ -62,13 +62,12 @@ In addition, there is a mouse hovering event that controls the display/hide the 
 
 ## End result 
 
-The visualization that we decided on going with in the end focused on showing covid cases and deaths with a focus on how the virus has affected different races by state over time. When loaded, our final prototype includes a heatmap with buttons that filter by race. There is a slider at the bottom of the map where the user can indicate a certain point in time or slide through to see the progression of how the virus has affected the United States as a whole or a certain state. Under the map and slider, we included a line chart in order to give the user a better understanding of the percentages instead of just the heatmap visual. Within the line chart, there is a vertical pink bar that indicates the point in time corresponding to the position of the slider. 
+The visualization that we decided on going with in the end focused on showing covid cases and deaths with a focus on how the virus has affected different races by state over time. When loaded, our final prototype includes a heatmap with buttons that filter by race. There is a slider at the bottom of the map where the user can indicate a certain point in time or slide through to see the progression of how the virus has affected the United States as a whole or a certain state. Under the map and slider, we included a line chart in order to give the user a better understanding of the percentages instead of just the heatmap visual. 
 
 ![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/final_overview.png?raw=true)
 *Fig 3. Landing page of our project*
 
 At the top of the heatmap, we decided to only include filters for all races, Caucasion, African American, and Asian. However, in the line chart we also included Native Hawaiin and Paicic Islanders as well as American Indian and Alaskan Natives. There was not enough data to include the NHPI and AIAN races in the heatmap for all the states, however we felt it was still important to see within the line chart. 
-
 
 ![](https://github.com/archie-sas/Covid-visualization-inls641/blob/master/pictures/line_chart.png?raw=true)
 *Fig 4. Line chart showing the percentage of cases in each Race in Pennsylvania*
