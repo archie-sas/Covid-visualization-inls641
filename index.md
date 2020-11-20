@@ -5,7 +5,7 @@ This page is meant to serve as the final report of our team's Covid Visualizatio
 # Table of Contents 
 
 1. [Team Goals](#team-goals)
-2. [Intendeded Visualization Design](#intended-visualization-design)
+2. [Intended Visualization Design](#intended-visualization-design)
 3. [The Process](#the-process-of-the-project)
 4. [The Final Product](#end-result)
 5. [Ethical and Societal Concerns](#ethical-and-societal-concerns)
