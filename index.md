@@ -88,6 +88,8 @@ One of the biggest societal concerns is how the Covid-19 virus has disproportion
 
 From an ethical standpoint, a big concern is the data quality. The dataset starts in mid-April, when reports of underreporting Covid-19 statistics were rampant. Covid-19 related deaths are not directly classified as Covid-19 deaths and diseases such as pneumonia and influenza have very similar symptoms to Covid-19. In addition, deaths not directly caused by Covid-19 but are nonetheless related to the pandemic, are not recorded. These deaths include scenarios such as not receiving emergency care due to overcrowded hospitals, suicide from depression caused by the lock etc. Should these cases be included when studying the deaths caused by Covid-19? 
 
+Furthermore, more research must be done so that critical condition cases are also recorded and visualized by race. It should be acknowledged that even though racial data has been collected on initial infection rates, the data has not included those that end up in the ICU and thus do not make up the full picture of races that are disproportionately affected by Covid-19. Conversations with a medical professional indicated that there is an inbalance of ICU cases between different races.
+
 
 ## Reflection 
 
